@@ -35,6 +35,19 @@
           '/': 'Search'
         }
       },
+	  //复制到剪贴板,在所有的代码块上添加一个简单的Click to copy按钮来允许用户从你的文档中轻易地复制代码。由@jperasmus提供。
+	  copyCode: {
+		buttonText : 'Copy to clipboard',
+		errorText  : 'Error',
+		successText: 'Copied'
+	  },
+	  // Pagination,docsify的分页导航插件，由@imyelo提供。
+	  pagination: {
+		previousText: '上一章节',
+		nextText: '下一章节',
+		crossChapter: true,
+		crossChapterText: true,
+	  },
       formatUpdated: '{MM}-{DD} {HH}:{mm}',
       plugins: [
         function(hook, vm) {
@@ -57,5 +70,13 @@
   <script src="//unpkg.com/prismjs/components/prism-markdown.min.js"></script>
   <script src="//unpkg.com/prismjs/components/prism-nginx.min.js"></script>
   <script src="//unpkg.com/prismjs/components/prism-json.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-java.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-sql.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1.20.0/components/prism-properties.min.js"></script>
+  <!--复制到剪贴板,在所有的代码块上添加一个简单的Click to copy按钮来允许用户从你的文档中轻易地复制代码。由@jperasmus提供。-->
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
+  <!--Pagination,docsify的分页导航插件，由@imyelo提供。-->
+  <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
 </body>
 </html>
